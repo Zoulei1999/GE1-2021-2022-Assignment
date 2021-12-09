@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void AddScore(int scoreToAdd){
-        currentScore += scoreToAdd;
-        scoreText.text = "Score : " + currentScore;
+        currentScore += scoreToAdd; // adds score to cuurent score for canvas
+        scoreText.text = "Score : " + currentScore; 
     }
 }
