@@ -21,9 +21,9 @@ public class GoldPickup : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         
         if(other.tag == "Player"){
-            FindObjectOfType<GameManager>().AddScore(score);
+            FindObjectOfType<GameManager>().AddScore(score);// code to add score to score which is managed by game manager
             
-            Destroy(gameObject);
+            Destroy(gameObject); //deletes the object based on collison.
         }
     }
 }

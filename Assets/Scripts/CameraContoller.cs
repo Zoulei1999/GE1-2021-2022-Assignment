@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class CameraContoller : MonoBehaviour
 {
-    public Transform target; 
+    public Transform target; // target is the player 
     public Vector3 offset;
     public bool useOffsetValues;
-    public float rotateSpeed;
-    public Transform pivot;
-    public float maxViewAngle;
-    public float minViewAngle;
-    public bool invertY;
+    public float rotateSpeed; //Camero Rotate speed
+    public Transform pivot;  // pivot is player attachment
+    public float maxViewAngle; // used to prevent camera flipping up
+    public float minViewAngle; // used to prevent camera flipping down
+    public bool invertY;// used to invert camera controll
 
 
     // Start is called before the first frame update

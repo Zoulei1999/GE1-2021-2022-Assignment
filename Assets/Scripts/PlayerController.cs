@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed;
-    public float jumpForce;
+    public float moveSpeed;// movespeed
+    public float jumpForce;// jump height
     public CharacterController controller;
 
-    private Vector3 moveDirection;
-    public float gravityScale;
+    private Vector3 moveDirection; // vector for move direction
+    public float gravityScale; // gravity scale used to adjust fall speed
 
     public Animator anim;
-    public Transform pivot;
-    public float rotateSpeed;
+    public Transform pivot; //for camera control
+    public float rotateSpeed; //rotation speed
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
             moveDirection.y = 0f;
             if(Input.GetButtonDown("Jump")){
-                moveDirection.y = jumpForce;
+                moveDirection.y = jumpForce; // this is to prevent jump spamming to fly
             }
         }
 
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
             //transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, rotateSpeed * Time.deltaTime);
         }
 
-        anim.SetBool("isGrounded", controller.isGrounded);
-        anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
+        anim.SetBool("isGrounded", controller.isGrounded); // checks if user is bounded
+        anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal")))); 
     }
 }

@@ -20,11 +20,11 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentTime -= 1 * Time.deltaTime;
-        timerText.text = currentTime.ToString("Time Left: " + "0");
+        currentTime -= 1 * Time.deltaTime; // countdown timer
+        timerText.text = currentTime.ToString("Time Left: " + "0"); //used to display timer
 
         if(currentTime <= 0 ){
-            currentTime = 0;
+            currentTime = 0; // prevent timer to go negative
         }
     }
 }
