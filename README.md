@@ -22,13 +22,13 @@ The player is dropped in a world surrounded by four walls and the player must fi
 | Class/asset | Source |
 |-----------|-----------|
 | Goldpick.cs | Self written |
-| CameraController.cs | Modified from [reference]() |
-| PlayerController.cs | Modified From [reference]() |
+| CameraController.cs | Self written  |
+| PlayerController.cs | Self written |
 | Timer.cs | Self written |
 | TerrainGenerator.cs | From [reference](youtube.com/watch?v=vFvwyu_ZKfU) |
-| GameManager.cs | From [reference]() |
+| GameManager.cs | Self written |
 # References
-
+youtube.com/watch?v=vFvwyu_ZKfU
 # What I am most proud of in the assignment
 Getting the game completed itself, was something that i am very proud of as i never made a game by myself and because of that i tried my best with the limited knowledge i have.
 
